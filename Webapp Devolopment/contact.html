@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <!-- to link an external css-->
+    <link rel="stylesheet" href="CSS/contactcss.css">
+</head>
+<body style="background-image: url('Image/veg3.jpg'); background-size: cover; background-position: center;">
+  <!-- This is for navigation bar -->
+    <nav>
+	<h1>
+    <!-- set an image-->
+    <img src="Image/logo.jpg" alt="Logo" style="height: 30px;"> 
+    Veggieworld</h1>
+        <!-- this is to create a list in nav-->
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="index.html">Main</a></li>
+        </ul>
+    </nav>
+    <!--this is to create a container-->
+    <div class="container">
+      <!-- to create a html form-->
+        <form>
+          <!-- to create an input label-->
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your maiden name">
+          <!-- to create an input label-->
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name">
+          <!-- to create an phone num input-->
+          <label for="lname">Contact Number</label>
+          <input type="tel" id="contact" name="connum" placeholder="Your Phone number">
+          <!-- to create an input label-->
+          <label for="county">County</label>
+          <!-- to give options to user -->
+          <select id="county" name="county">
+            <option value="v1">Dublin</option>
+            <option value="v2">Galway</option>
+            <option value="v3">Cork</option>
+            <option value="v4">Belfast</option>
+            <option value="v5">Wexford</option>
+          </select>
+          <!-- to create an input label-->
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <!-- to create a submitbutton-->
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>

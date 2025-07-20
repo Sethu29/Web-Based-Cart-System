@@ -1,0 +1,127 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font */
+}
+/* navigation bar  feature*/
+nav {
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex; /* for displaying the  flex to align horizontally*/
+    justify-content: space-between; 
+    align-items: center; 
+    border-top-left-radius: 20px; /* for curvy border on  top left */
+    border-top-right-radius: 20px; /* for curvy border on top right */
+}
+
+nav h1 {
+    color: green;
+    margin: 0; /* For  removing  the default margin */
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex; /* Display flex to align horizontally */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
+
+nav ul li a:hover {
+    background-color:turquoise;
+    border-radius: 5px;/*To round the corners of elements*/
+}
+
+nav ul li.active a {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;/* For calculating the width and height of the element */
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /* column features  */
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  /* card features  */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  /* container features*/
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* title features*/
+  .title {
+    color: grey;
+  }
+  /* button features*/
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  /*different styles to different media*/
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

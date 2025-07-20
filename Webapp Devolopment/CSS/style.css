@@ -1,0 +1,104 @@
+body {
+   
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Is to adjust the alpha value to change transparency */
+}
+
+nav {
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex; /* Display flex to align horizontally */
+    justify-content: space-between; /* Space between h1 and ul */
+    align-items: center; /* Vertically center products */
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+
+nav h1 {
+    color: green;
+    margin: 0; 
+    font-family: Tangerine;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex; /* Display flex to align products horizontally */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
+
+nav ul li a:hover {
+    background-color:turquoise;
+    border-radius: 5px;/*To round the corners of elements*/
+}
+
+
+.content-header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 45px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+p {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+
+
+/* Styling the columns */
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(251, 253, 252);
+    border: 1px solid black;
+}
+
+.column h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}

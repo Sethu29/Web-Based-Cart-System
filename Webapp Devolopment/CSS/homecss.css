@@ -1,0 +1,156 @@
+
+/*to select all items inHTML*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overall Styles */
+body {
+    
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* navigation bar */
+nav {
+    background-color: blanchedalmond;/*for the background color*/
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+nav h1 {
+    color: green;
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: turquoise;
+    border-radius: 5px;
+}
+
+/* hero section */
+.hero {
+    
+    background-size: cover; /* to set the background image to cover the  entire screen */
+    background-position: center;/* to postion it to center */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff; /*to change the color of text to white */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff; /*to change the color of text to white */
+}
+
+/* button */
+.btn {
+    background-color: green; /* set the button background color to green */
+    color: white; /* to set button text color into white */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px; /* to add curved edges */
+    transition: background-color 0.3s; /* for add the transition effect */
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    background-color: darkgreen; /* on hover change the button background color  */
+}
+
+/* featured products */
+.featured {
+    
+    background-size: cover; /* Set the background image to coverthe entire screen */
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    color: rgb(10, 10, 10);
+}
+
+
+
+
+

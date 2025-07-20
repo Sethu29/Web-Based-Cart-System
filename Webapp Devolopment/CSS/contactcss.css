@@ -1,0 +1,113 @@
+body {
+    
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+nav {
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+
+nav h1 {
+    color: green;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex; /* Display flex to align  horizontally */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
+
+nav ul li a:hover {
+    background-color:turquoise;
+    border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* container features  */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+/*different styles to different media*/
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}

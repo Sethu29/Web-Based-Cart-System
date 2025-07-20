@@ -1,0 +1,84 @@
+body {
+    
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+nav {
+    background-color: blanchedalmond;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex; /* Display flex to align  horizontally */
+    justify-content: space-between; 
+    align-items: center; 
+    border-top-left-radius: 20px; /* Curvy border on top left */
+    border-top-right-radius: 20px; /* Curvy border on top right */
+}
+
+nav h1 {
+    color: green;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex; /* Display flex to align horizontally */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+}
+
+nav ul li a:hover {
+    background-color:turquoise;
+    border-radius: 5px;
+}
+ /* container features*/
+.container {
+    background-color:white;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+/* for rearranging*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+/* product features*/
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+/* to apply different background color and text to the button */
+.btn {
+    background-color: green; /* set the button background color to green */
+    color: white; /* to set button text color into white */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px; /* to add curved edges */
+    transition: background-color 0.3s; /* for add the transition effect */
+}
